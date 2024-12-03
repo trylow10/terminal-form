@@ -202,7 +202,7 @@ export const CONFIG = {
       "<white>Contact Me</white>",
       [
         ["aryaltrylowchan@gmail.com", "mailto:aryaltrylowchan@gmail.com"],
-        ["(+977) 9861574412", "tel:+9779861574412"],
+        ["(+977) 9861574412", "+9779861574412"],
         ["Portfolio", "https://atrilochan.com.np"],
         ["Github", "https://github.com/trylow10/"],
         ["Linkedin", "https://www.linkedin.com/in/trilochanaryal/"],

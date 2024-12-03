@@ -106,7 +106,7 @@ function printHomeContents(term) {
       "\n"
     )
   );
-  term.echo(
-    FILES.map((file) => `<white class="command">${file}</white>`).join("\n")
-  );
+  // term.echo(
+  //   FILES.map((file) => `<white class="command">${file}</white>`).join("\n")
+  // );
 }
