@@ -8,7 +8,7 @@ $(document).ready(function () {
   figlet.preloadFonts([CONFIG.font], ready);
 
   function prompt() {
-    return `<green>${this.state.currentDir || ROOT_DIR}</green> `;
+    return `<green>${this.state?.currentDir || ROOT_DIR}</green> `;
   }
 
   const term = $terminalContainer.terminal(
@@ -54,11 +54,10 @@ $(document).ready(function () {
     const dir = $(this).text();
     term.exec(`cd ~/${dir}`, { typing: true, delay: 50 });
   });
-
   function ready() {
     term
       .echo(
-        "<white>Welcome to Tsh, the friendly interactive shell\nType <green>help</green> for instructions on how to use Tsh</white> \n"
+        "<span><white>Welcome to Tsh, the friendly interactive shell\nType <green>help</green> for instructions on how to use Tsh</white></span> \n"
       )
       .resume();
   }
