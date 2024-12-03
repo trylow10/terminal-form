@@ -1,0 +1,72 @@
+:root {
+  --text-color: #f4f4f4;
+  --bg-color: #000;
+  --highlight-color: #ff0;
+  --font-size-mobile: 12px;
+  --font-size-tablet: 14px;
+  --font-size-desktop: 16px;
+  --line-height: 1.5;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Courier New", monospace;
+  font-size: var(--font-size-mobile);
+  line-height: var(--line-height);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+#terminal-container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.terminal {
+  height: 100% !important;
+  width: 100% !important;
+  font-size: var(--font-size-mobile) !important;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: var(--font-size-tablet);
+  }
+  .terminal {
+    font-size: var(--font-size-tablet) !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: var(--font-size-desktop);
+  }
+  .terminal {
+    font-size: var(--font-size-desktop) !important;
+  }
+}
+
+.command,
+.directory {
+  cursor: pointer;
+  color: var(--highlight-color);
+  transition: color 0.3s ease;
+}
+
+.command:hover,
+.directory:hover {
+  color: #fff;
+}
+
+.me-command {
+  max-width: 100%;
+  word-wrap: break-word;
+}
